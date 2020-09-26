@@ -1,0 +1,83 @@
+nav{
+    background-color: #f1f1f1;
+}
+.background{
+    background-image: url("bg-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    height: 100px;
+}
+.carousel{
+    background-image: url("bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.carousel .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title p{
+    color: orange;
+}
+.phone .card,.pc .card{
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.category{
+    text-align: center;
+}
+.line{
+    width: 70px;
+    height: 5px;
+    background-image: linear-gradient(60deg,orange,yellow);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.main-row{
+    display: flex;
+    align-items: center;
+}
+.cat_row{
+    display: flex;
+    align-items: center;
+}
+
+.bag,.per,.shoe{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    border: none;
+    padding: 30px 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .carousel{
+        background-position: right center;
+    }
+    .carousel .row{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .card-deck{
+        display: block;
+    }
+}
+@media only screen and (max-width: 330px){
+    .ext{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .img{
+        width: 15%;
+    }
+}
